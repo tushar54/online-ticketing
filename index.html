@@ -7,9 +7,151 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="container mx-auto">
     
+<nav>
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <a class="btn btn-ghost text-2xl font-bold">P-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 font-bold text-xl text-slate-600">
+            <li><a>Home</a></li>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+        <div>
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-0 top-6">
+                  <li><a>Home</a></li>
+                  <li>
+                    <a>About</a>
+                  </li>
+                  <li><a>Destination</a></li>
+                  <li><a>Search</a></li>
+                </ul>
+              </div>
+                <div class="hidden lg:block">
+                    <a class="btn text-green-400 text-xl px-7">Bus <span><img src="./images/bus-icon.png" alt=""></span></a>
+                </div>
+        </div>
+        </div>
+      </div>
+</nav > 
 
+
+<!-- header section  -->
+<header class="container mx-auto">
+  <div class="bg-[url('./images/banner.png')] bg-no-repeat h-[550px] flex flex-col justify-center items-center text-center bg-center  relative">
+  <!-- ... -->
+   <div class="space-y-4">
+    <h1 class="text-5xl font-bold">
+     <span class="text-white "> End-to-End Travel with</span> <br> <span class="text-green-600 ">
+        P Paribahan
+      </span>
+    </h1>
+    <p class="text-white">
+      Yes, you can run unit tests and view the results directly within the app. <br> The integrated testing features allow for a streamlined .
+    </p>
+    <button class="btn text-black bg-[#1DD100]">
+      Buy Tickets
+    </button>
+   </div>
+
+
+   <div class="flex justify-between items-center gap-10 absolute -bottom-10">
+    <div>
+      <div class="flex justify-center items-center bg-white rounded-2xl border border-b-4 border-green-400 w-[250px] h-[100px] space-x-2">
+        <img src="./images/people.png" alt="">
+      <div >
+        <h1 class="text-2xl font-bold">500 k</h1>
+        <p class="text-lg">Registered user</p>
+      </div>
+      </div>
+    </div>
+    <div>
+      <div class="flex justify-center items-center bg-white rounded-2xl border border-b-4 border-green-400 w-[250px] h-[100px] space-x-2">
+        <img src="./images/ticket-cupon.png" alt="">
+       <div>
+        <h1 class="text-2xl font-bold">1.7lacks</h1>
+        <p class="text-lg">Ticket sold</p>
+       </div>
+      </div>
+    </div>
+    <div>
+      <div class="flex justify-center items-center bg-white rounded-2xl border border-b-4 border-green-400 w-[250px] h-[100px] space-x-2">
+        <img src="./images/stoppage.png" alt="">
+        <div>
+          <h1 class="text-2xl font-bold">80K+</h1>
+        <p class="text-lg">Renteal partner</p>
+        </div>
+      </div>
+    </div>
+   </div>
+</div>
+</header>
+<!-- header section end -->
+ <!-- card section -->
+ <section class=" mt-20">
+ <div class="flex flex-col justify-center items-center space-y-8">
+  <h1 class=" text-3xl font-bold">
+    Best offers for you
+  </h1>
+  <div class="flex justify-center items-center gap-8">
+    <div class="flex justify-center items-center bg-[#FFBF0F] rounded-xl w-[400px] h-[150px] gap-3 relative">
+<div class="border-r-2 border-white border-dashed pr-4 h-[140px] flex flex-col justify-center items-center">
+ <h1><span class="text-3xl font-bold">15% OFF</span> <br>
+ <span class="font-bold"> on your next purchase</span> <br>
+ <span class="text-sm text-slate-700"> use by January 2024</span></h1>
+</div>
+<div class="pl-6">
+<span class="text-2xl font-bold">NEW15 </span><br>
+  <span class="text-sm font-bold">Coupon Code</span>
+</div>
+<div class="w-8 h-8 bg-white rounded-full absolute -top-3 right-[154px]">
+</div>
+<div class="w-8 h-8 bg-white rounded-full absolute -bottom-3 right-[154px]">
+</div>
+    </div>
+    <div class="flex justify-center items-center bg-[#F78C9C] rounded-xl w-[400px] h-[150px] gap-3 relative">
+<div class="border-r-2 border-white border-dashed pr-4 h-[140px] flex flex-col justify-center items-center">
+ <h1><span class="text-3xl font-bold">15% OFF</span> <br>
+ <span class="font-bold"> on your next purchase</span> <br>
+ <span class="text-sm text-slate-700"> use by January 2024</span></h1>
+</div>
+<div class="pl-6">
+<span class="text-2xl font-bold">NEW15 </span><br>
+  <span class="text-sm font-bold">Coupon Code</span>
+</div>
+<div class="w-8 h-8 bg-white rounded-full absolute -top-3 right-[154px]">
+</div>
+<div class="w-8 h-8 bg-white rounded-full absolute -bottom-3 right-[154px]">
+</div>
+    </div>
+  </div>
+ </div>
+ </section>
     <script src="./main.js"></script>
 </body>
 </html>
